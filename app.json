@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Life Tracker",
+    "slug": "life-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.surajpandey.lifetracker",
+      "infoPlist": { "UIBackgroundModes": ["location"] }
+    },
+    "android": {
+      "package": "com.surajpandey.lifetracker",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "FOREGROUND_SERVICE", "FOREGROUND_SERVICE_LOCATION", "POST_NOTIFICATIONS"]
+    },
+    "plugins": [
+      "expo-notifications",
+      ["expo-location", {
+        "isAndroidBackgroundLocationEnabled": true,
+        "locationAlwaysAndWhenInUsePermission": "Life Tracker saves the places you visit, even when the app is closed."
+      }]
+    ]
+  }
+}
